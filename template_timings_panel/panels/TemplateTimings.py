@@ -14,6 +14,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 # A set of nodes found by the tag_compiler. Used to patch during next request
 # and to unpatch the nodes.
 FOUND_GENERIC_NODES = set()
@@ -238,7 +239,7 @@ class TemplateTimings(Panel):
 
             return "%.0f ms with %s queries %s" % (base_time, total_template_queries, query_percentage_time)
 
-    def process_response(self, request, response):
+    def generate_stats(self, request, response):
         timings = self._get_timings()
         # Setting default_factory to None allows us to access
         # template_timings.iteritems in the template.
