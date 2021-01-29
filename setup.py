@@ -25,7 +25,7 @@ setup(
     author='Tom Forbes',
     author_email='tom@tomforb.es',
     description='A django-debug-toolbar panel that shows you template rendering times for Django',
-    install_requires=['Django', 'django-debug-toolbar>=1.0'],
+    install_requires=['django-debug-toolbar>=1.0'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -36,7 +36,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'Topic :: Software Development :: Debuggers'],
-
+        'Topic :: Software Development :: Debuggers'
+    ],
     long_description=readme,
 )
